@@ -45,17 +45,15 @@ Same component structure as Existence but with the geometric visual treatment:
 3. Studio links/projects
 4. Footer with DreamCraft-Studio branding
 
-## Content — DreamCraft-Specific Links
+## Content
 
-Each brand has its own completely separate set of URLs, social links, and project listings. DreamCraft-Studio's links are independent from Existence and We Headless.
+### Social Links (shared)
+Siyabonga's personal social icons (Twitter, Instagram, GitHub, etc.) persist on all brand tabs — they are defined once in the shared profile config.
 
-### Social Links
-TBD — DreamCraft-Studio will have its own social media accounts and URLs.
-
-### Project/App Links
+### App/Project Links (DreamCraft-Studio ecosystem only)
 TBD — DreamCraft-Studio's own projects, tools, and services will be listed here. These are entirely separate from Existence's apps (Groove, XFlush, etc.).
 
-All links are defined in `apps/web/lib/brands/dreamcraft.ts` and are **not** shared with the other brands.
+App links are defined in `apps/web/lib/brands/dreamcraft.ts` and are unique to this brand.
 
 ### Notes
 - Details to be refined during implementation

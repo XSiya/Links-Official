@@ -44,17 +44,15 @@ Same component structure but stripped down:
 3. Links — simple list or thin-bordered cards
 4. Footer — minimal copyright
 
-## Content — We Headless-Specific Links
+## Content
 
-Each brand has its own completely separate set of URLs, social links, and project listings. We Headless's links are independent from Existence and DreamCraft-Studio.
+### Social Links (shared)
+Siyabonga's personal social icons (Twitter, Instagram, GitHub, etc.) persist on all brand tabs — they are defined once in the shared profile config.
 
-### Social Links
-TBD — We Headless will have its own social media accounts and URLs.
-
-### Project/Service Links
+### Project/Service Links (We Headless ecosystem only)
 TBD — We Headless's own services, tools, and resources will be listed here. These are entirely separate from Existence's apps (Groove, XFlush, etc.) and DreamCraft-Studio's projects.
 
-All links are defined in `apps/web/lib/brands/weheadless.ts` and are **not** shared with the other brands.
+App links are defined in `apps/web/lib/brands/weheadless.ts` and are unique to this brand.
 
 ### Notes
 - This is a light-theme brand — the only one of the three

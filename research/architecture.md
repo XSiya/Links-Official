@@ -50,7 +50,7 @@ The `BrandLayout` component wraps page content with `<div data-brand={slug}>`, a
 
 ## Data Model — Typed Brand Configs
 
-Each brand has its own config file with completely independent content — its own social links, its own app/project URLs, its own metadata. Nothing is shared between brands. Existence has Groove, XFlush, AfterLife, etc. DreamCraft-Studio and We Headless will each have their own distinct set of links and projects.
+Each brand has its own config file with its own app/project URLs, metadata, and theme. The **social links are shared** across all brands — they belong to Siyabonga personally (Twitter, Instagram, GitHub, etc.) and persist on every tab. The **app/product links are unique per brand** — Existence has Groove, XFlush, AfterLife, etc., while DreamCraft-Studio and We Headless each have their own distinct products and services.
 
 Each brand config file exports typed data:
 
@@ -64,9 +64,16 @@ export interface Brand {
   url: string;                  // official website
   profileImage: string;
   quote?: string;
-  socialLinks: SocialLink[];
-  sections: Section[];
+  sections: Section[];          // apps/products unique per brand
   theme: BrandTheme;
+}
+
+// Shared across all brands — Siyabonga's personal accounts
+export interface SharedProfile {
+  name: string;
+  displayName: string;          // "Mushin no Shin"
+  username: string;             // "siyabon_ga"
+  socialLinks: SocialLink[];    // persists on all tabs
 }
 
 export interface SocialLink {

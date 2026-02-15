@@ -64,11 +64,11 @@ Each linked app has its own ripple color on click:
 5. Apps section: Grid of app cards (Groove, XFlush, AfterLife, TrueTime, Cheat Codes, Plates, Inventions, MapMemory)
 6. Footer: `© {year} Existence, Inc. All rights reserved. Siyabonga Kubeka`
 
-## Content — Existence-Specific Links
+## Content
 
-Each brand has its own unique set of URLs, social links, and app listings. Existence's content is entirely separate from DreamCraft-Studio and We Headless.
+### Social Links (shared across all brands)
+These are Siyabonga's personal accounts and appear on every brand tab — they are not Existence-specific.
 
-### Social Links
 | Platform | URL |
 |----------|-----|
 | Twitter/X | https://twitter.com/siyabon_ga |
@@ -79,6 +79,8 @@ Each brand has its own unique set of URLs, social links, and app listings. Exist
 | Spotify | https://open.spotify.com/show/6MVCEpJ28PMZ7VzCpdC00C |
 | WhatsApp | https://wa.me/c/27659192291 |
 | GitHub | https://github.com/XSiya |
+
+Defined once in a shared profile config (`apps/web/lib/brands/shared.ts`), not duplicated per brand.
 
 ### App/Project Links (Existence ecosystem only)
 | App | Subtitle | URL |
@@ -93,7 +95,7 @@ Each brand has its own unique set of URLs, social links, and app listings. Exist
 | Inventions | Where it all begins | https://inventions.app |
 | MapMemory | Identity | https://n-plates.app |
 
-These links are defined in `apps/web/lib/brands/existence.ts` and are **not** shared with the other brands.
+These app links are defined in `apps/web/lib/brands/existence.ts` and are unique to Existence — the other brands have their own products.
 
 ### Legacy File References
 - Particle config: `legacy/src/app/app.component.ts:15-160`

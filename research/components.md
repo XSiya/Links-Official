@@ -25,22 +25,24 @@ Ported from: `legacy/src/app/home/home.component.html` (lines 6-23)
 
 ## SocialIcons
 
-Row of social media icon buttons. Uses `lucide-react` icons (replacing Angular Material FABs).
+Row of Siyabonga's personal social media icon buttons. **Shared across all brands** — these are his accounts, not startup-specific. Uses `lucide-react` icons (replacing Angular Material FABs).
 
 ```
 Props: { links: SocialLink[] }
 Renders: Flex row of circular icon buttons, each opens URL in new tab
+Data source: Shared profile config (apps/web/lib/brands/shared.ts)
 ```
 
 Ported from: `legacy/src/app/home/home.component.html` (lines 25-66)
 
 ## LinkCard
 
-Clickable card showing an app/project with logo, title, subtitle, and URL. Supports the mouse-tracking glow effect for Existence brand.
+Clickable card showing an app/project with logo, title, subtitle, and URL. **These are brand-specific** — each startup has its own set of apps/products/services. Supports the mouse-tracking glow effect for Existence brand.
 
 ```
 Props: { title: string, subtitle: string, url: string, icon?: ReactNode, rippleColor?: string, enableGlow?: boolean }
 Renders: Card with flex row (icon left, text right), click opens URL
+Data source: Per-brand config (e.g. apps/web/lib/brands/existence.ts)
 ```
 
 Ported from: `legacy/src/app/home/sections/apps/apps.component.html`
