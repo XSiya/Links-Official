@@ -50,7 +50,9 @@ The `BrandLayout` component wraps page content with `<div data-brand={slug}>`, a
 
 ## Data Model — Typed Brand Configs
 
-Each brand has a config file exporting typed data:
+Each brand has its own config file with completely independent content — its own social links, its own app/project URLs, its own metadata. Nothing is shared between brands. Existence has Groove, XFlush, AfterLife, etc. DreamCraft-Studio and We Headless will each have their own distinct set of links and projects.
+
+Each brand config file exports typed data:
 
 ```typescript
 // apps/web/lib/brands/types.ts

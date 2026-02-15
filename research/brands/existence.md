@@ -64,7 +64,11 @@ Each linked app has its own ripple color on click:
 5. Apps section: Grid of app cards (Groove, XFlush, AfterLife, TrueTime, Cheat Codes, Plates, Inventions, MapMemory)
 6. Footer: `© {year} Existence, Inc. All rights reserved. Siyabonga Kubeka`
 
-### Social Links (from legacy)
+## Content — Existence-Specific Links
+
+Each brand has its own unique set of URLs, social links, and app listings. Existence's content is entirely separate from DreamCraft-Studio and We Headless.
+
+### Social Links
 | Platform | URL |
 |----------|-----|
 | Twitter/X | https://twitter.com/siyabon_ga |
@@ -75,6 +79,21 @@ Each linked app has its own ripple color on click:
 | Spotify | https://open.spotify.com/show/6MVCEpJ28PMZ7VzCpdC00C |
 | WhatsApp | https://wa.me/c/27659192291 |
 | GitHub | https://github.com/XSiya |
+
+### App/Project Links (Existence ecosystem only)
+| App | Subtitle | URL |
+|-----|----------|-----|
+| Existence (Official) | Every second counts | https://existence-klcorp.com |
+| Groove | Catch me outside | https://groove-l.app |
+| XFlush | Buster Douglas | https://xflush.app |
+| AfterLife | Genesis | https://after-life.app |
+| TrueTime | Every Second | https://true-time.app |
+| Cheat Codes | Matrix Bug | https://cheat-codes.app |
+| Plates | Identity | https://n-plates.app |
+| Inventions | Where it all begins | https://inventions.app |
+| MapMemory | Identity | https://n-plates.app |
+
+These links are defined in `apps/web/lib/brands/existence.ts` and are **not** shared with the other brands.
 
 ### Legacy File References
 - Particle config: `legacy/src/app/app.component.ts:15-160`

@@ -39,11 +39,23 @@
 - Radius: `8px`
 
 ### Layout Structure
-Same content sections as Existence but with the geometric visual treatment:
+Same component structure as Existence but with the geometric visual treatment:
 1. Profile header
 2. Social icons
 3. Studio links/projects
 4. Footer with DreamCraft-Studio branding
+
+## Content — DreamCraft-Specific Links
+
+Each brand has its own completely separate set of URLs, social links, and project listings. DreamCraft-Studio's links are independent from Existence and We Headless.
+
+### Social Links
+TBD — DreamCraft-Studio will have its own social media accounts and URLs.
+
+### Project/App Links
+TBD — DreamCraft-Studio's own projects, tools, and services will be listed here. These are entirely separate from Existence's apps (Groove, XFlush, etc.).
+
+All links are defined in `apps/web/lib/brands/dreamcraft.ts` and are **not** shared with the other brands.
 
 ### Notes
 - Details to be refined during implementation

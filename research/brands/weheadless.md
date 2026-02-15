@@ -38,11 +38,23 @@
 - Radius: `0px`
 
 ### Layout Structure
-Same content sections but stripped down:
+Same component structure but stripped down:
 1. Profile header — minimal, clean text
 2. Social icons — outlined/line-style icons
 3. Links — simple list or thin-bordered cards
 4. Footer — minimal copyright
+
+## Content — We Headless-Specific Links
+
+Each brand has its own completely separate set of URLs, social links, and project listings. We Headless's links are independent from Existence and DreamCraft-Studio.
+
+### Social Links
+TBD — We Headless will have its own social media accounts and URLs.
+
+### Project/Service Links
+TBD — We Headless's own services, tools, and resources will be listed here. These are entirely separate from Existence's apps (Groove, XFlush, etc.) and DreamCraft-Studio's projects.
+
+All links are defined in `apps/web/lib/brands/weheadless.ts` and are **not** shared with the other brands.
 
 ### Notes
 - This is a light-theme brand — the only one of the three
