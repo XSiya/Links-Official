@@ -1,0 +1,26 @@
+<div class="absolute  w-full p-2 z-10" style="position: fixed">
+  <div class="flex justify-center  " >
+    <div class="toolbar-card h-full w-full d-w" [ngClass]="{'mini' : isCollapse()}">
+      <div class="flex flex-row">
+        <div [ngClass]="{'small' : isCollapse()}">
+          <div class="logo">
+            <img
+              class="aspect-square rounded-[10px] bg-zinc-100 object-cover dark:bg-zinc-800"
+              src="assets/profile/mushin-profile-picture-2.jpg"
+              style="color: transparent;">
+          </div>
+        </div>
+        <!-- Use flex and items-center here -->
+        <div class="flex-grow flex items-center pl-7">
+          <div [ngClass]="isCollapse() ? 'text-2xl' : 'text-3xl'" style="font-family: Philosopher;">Mushin no Shin</div>
+        </div>
+        <div class="flex flex-grow"></div>
+        <div class="flex flex-row">
+          <div>Home</div>
+          <div>Gallery</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

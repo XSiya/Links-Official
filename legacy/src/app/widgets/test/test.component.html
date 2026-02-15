@@ -1,0 +1,39 @@
+<div class="fixed inset-x-0 bottom-0" cdkDropListGroup>
+  <img id="base-image" src="https://firebasestorage.googleapis.com/v0/b/core-51f03.appspot.com/o/public%2Fegg_base.png?alt=media&token=247413ec-2c40-45b5-b267-8b1c8e9fef2d" width="40" class="absolute bottom-10 left-[30px] z-10 opacity-0">
+  <!--  <ng-particles-->
+  <!--    [id]="id"-->
+  <!--    [options]="confettiParams"-->
+  <!--    [particlesInit]="particlesInit"-->
+  <!--    (particlesLoaded)="particlesLoaded($event)"></ng-particles>-->
+  <!--  home container-->
+  <div class="absolute bottom-5 left-5 z-10">
+    <div cdkDropList
+         [cdkDropListData]="todo"
+         class="example-list"
+         (cdkDropListDropped)="dropActivate($event)">
+
+      <div class="box" *ngFor="let item of todo">
+        <img src="https://firebasestorage.googleapis.com/v0/b/core-51f03.appspot.com/o/public%2Fegg.png?alt=media&token=f9a1ffa3-c66a-4cce-9570-394a80f924c1" width="40" cdkDrag>
+      </div>
+    </div>
+  </div>
+
+  <!--  drag container-->
+  <div class="absolute bottom-5 right-5 z-10">
+    <div cdkDropList
+         [cdkDropListData]="done"
+         class="example-list"
+         (cdkDropListDropped)="drop($event)">
+      <div class="box-main" *ngFor="let item of done">
+        <img
+          class="opacity-[0.02] hover:opacity-50"
+          src="https://firebasestorage.googleapis.com/v0/b/core-51f03.appspot.com/o/public%2Fegg.png?alt=media&token=f9a1ffa3-c66a-4cce-9570-394a80f924c1" width="40"
+          cdkDrag (cdkDragMoved)="started($event)"
+          (cdkDragEnded)="ended()">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

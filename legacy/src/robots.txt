@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mushin.existence-klcorp.com/sitemap.xml
